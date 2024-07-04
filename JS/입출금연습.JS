@@ -63,7 +63,10 @@ function test() {
 
 
 function deposit(){
-  
+  const value = Number(amount.value);
+  balance += value; 
+  output.innerText = balance;
+  amount.value= '';
 }
 
 
@@ -71,5 +74,5 @@ function deposit(){
 
 
 function withdrawal(){
-
+ const pw = prompt("비밀번호를 입력하세요")
 }

@@ -1,49 +1,51 @@
-.account, .account * {
+.account,
+.account * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.account{
+.account {
   border: 5px solid grey;
   border-radius: 20px;
-  padding : 10px 50px;
+  padding: 10px 50px;
   width: 500px;
   margin: 200px auto;
 }
 
-.account .row{
+.account .row {
   display: flex;
   margin: 20px 0;
   padding: 20px 0;
 }
 
-.account .row:not(:last-of-type){
+.account .row:not(:last-of-type) {
   border-bottom: 3px solid grey;
 }
 
 
 
-.row > h1{
+.row>h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-#output{
+#output {
   flex-grow: 1;
   text-align: right;
   padding: 0 20px;
 }
 
-.input-row > label, .input-row > span{
+.input-row>label,
+.input-row>span {
   font-size: 1.5em;
   padding: 10px;
   flex-grow: 1;
 }
 
 
-.input-row > input{
+.input-row>input {
   flex-grow: 1;
   padding: 10px;
   font-size: 24px;
@@ -51,25 +53,25 @@
   text-align: right;
   width: 60%;
   outline: none;
-  border : none;
+  border: none;
   border-bottom: 2px solid grey;
 }
 
-.input-row > input:focus{
+.input-row>input:focus {
   border-color: purple;
   color: purple;
 }
 
 
 
-.btn-row{
+.btn-row {
   height: 100px;
 }
 
-.btn-row > button{
+.btn-row>button {
   flex-grow: 1;
   margin: 0 30px;
-  border : 5px solid black;
+  border: 5px solid black;
   border-radius: 10px;
   background-color: white;
   font-size: 28px;
@@ -79,133 +81,28 @@
 }
 
 /* 입금 버튼 */
-.deposit-btn{
+.deposit-btn {
   border-color: green !important;
   color: green;
 }
 
-.deposit-btn:hover{
+.deposit-btn:hover {
   color: white;
   background-color: green;
 }
 
 /* 출금 버튼 */
-.withdrawal-btn{
+.withdrawal-btn {
   border-color: red !important;
   color: red;
 }
 
-.withdrawal-btn:hover{
+.withdrawal-btn:hover {
   color: white;
   background-color: red;
 }
 
 
-.btn-row > button:active{
-  opacity: 0.7;
-}.account, .account * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.account{
-  border: 5px solid grey;
-  border-radius: 20px;
-  padding : 10px 50px;
-  width: 500px;
-  margin: 200px auto;
-}
-
-.account .row{
-  display: flex;
-  margin: 20px 0;
-  padding: 20px 0;
-}
-
-.account .row:not(:last-of-type){
-  border-bottom: 3px solid grey;
-}
-
-
-
-.row > h1{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-#output{
-  flex-grow: 1;
-  text-align: right;
-  padding: 0 20px;
-}
-
-.input-row > label, .input-row > span{
-  font-size: 1.5em;
-  padding: 10px;
-  flex-grow: 1;
-}
-
-
-.input-row > input{
-  flex-grow: 1;
-  padding: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: right;
-  width: 60%;
-  outline: none;
-  border : none;
-  border-bottom: 2px solid grey;
-}
-
-.input-row > input:focus{
-  border-color: purple;
-  color: purple;
-}
-
-
-
-.btn-row{
-  height: 100px;
-}
-
-.btn-row > button{
-  flex-grow: 1;
-  margin: 0 30px;
-  border : 5px solid black;
-  border-radius: 10px;
-  background-color: white;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  transition-duration: 0.1s;
-}
-
-/* 입금 버튼 */
-.deposit-btn{
-  border-color: green !important;
-  color: green;
-}
-
-.deposit-btn:hover{
-  color: white;
-  background-color: green;
-}
-
-/* 출금 버튼 */
-.withdrawal-btn{
-  border-color: red !important;
-  color: red;
-}
-
-.withdrawal-btn:hover{
-  color: white;
-  background-color: red;
-}
-
-
-.btn-row > button:active{
+.btn-row>button:active {
   opacity: 0.7;
 }
