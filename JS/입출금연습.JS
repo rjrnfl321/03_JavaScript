@@ -64,8 +64,11 @@ function test() {
 
 function deposit(){
   const value = Number(amount.value);
+
   balance += value; 
+
   output.innerText = balance;
+
   amount.value= '';
 }
 
@@ -74,5 +77,30 @@ function deposit(){
 
 
 function withdrawal(){
- const pw = prompt("비밀번호를 입력하세요")
+ const pw = prompt("비밀번호를 입력하세요");
+
+if(pw === null){
+  alert("비밀번호 입력 취소됨");
+  return;
+}
+
+if(pw !== password){
+  alert("비밀번호가 일치하지 않습니다");
+  return; 
+}
+
+const value = Number(amount.value);
+
+if(value > balance){
+  alert ("출금 금액이 잔액보다 클 수 없습니다");
+  return;
+}
+
+balance -= value; 
+
+output.innerText = balance;
+
+amount.value = '';
+
+alert(`${value}원이 출금 되었습니다. 남은 잔액 : ${balance}원`);
 }
