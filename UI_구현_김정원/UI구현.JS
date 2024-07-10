@@ -20,14 +20,14 @@ changeBtn.addEventListener("click", function () {
   boxBorder.style.height = input2.value + "px";
   // 글자 크기 //
   boxBorder.style.fontSize = input3.value + "px";
-
+  // 굵기 //
   const checkBtn = document.querySelector("[name = weight]:checked");
   let op;
   if (checkBtn === null) op = "normal"; // 체크가 안되어 있으면 normal
   else op = checkBtn.value; // 체크된 값(normal 또는 bold)
   boxBorder.style.fontWeight = op;
 
-  // 굵기 //
+  
   // 글자색 // 
   boxBorder.style.color = input4.value;
   // 배경색 // 
@@ -44,7 +44,11 @@ changeBtn.addEventListener("click", function () {
 
 
   // 세로 정렬 //
-
+  const col = document.querySelector("[name = col1]:checked");
+  let co;
+  if (col === null) co = "center";
+  else co = col.value;
+  boxBorder.style.justifyContent = co;
 
 
 
