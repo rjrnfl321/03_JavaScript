@@ -48,7 +48,7 @@ checkBtn.addEventListener("click", () => {
   }
   // 글자색
   if (FontColor1.value.trim().length > 0) {
-    box1.style.Color = FontColor1.value;
+    box1.style.color = FontColor1.value;
   }
   // 배경색
   if (BgColor1.value.trim().length > 0) {
