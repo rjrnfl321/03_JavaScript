@@ -34,26 +34,31 @@ changeBtn.addEventListener("click", function () {
   boxBorder.style.backgroundColor = input5.value;
 
   // 가로 정렬 //
-  // 문서내에서 HTML 속성중 name 속성값이 width인 요소들중에서 check된
+
+  // 문서내에서 HTML 속성중
+  // name 속성값이 width인 요소들중에서 check된
   // 요소만 얻어오기 
-  const row = document.querySelector("[name = width]:checked");
-  let wid
-  if (row === null) wid = "flex-end";
+  const row = document.querySelectorAll("[name = width]:checked");
+  let wid;
+  if (row === null) wid = "right";
   else wid = row.value;
   boxBorder.style.justifyContent = wid;
 
 
   // 세로 정렬 //
-  const col = document.querySelector("[name = col1]:checked");
-  let co;
-  if (col === null) co = "center";
-  else co = col.value;
-  boxBorder.style.justifyContent = co;
+
+  // name 속성값이 colum1인 요소들중에서 check된
+  // 요소만 얻어오기 
+  // const colum = document.querySelectorAll("[name = colum1]:checked");
+  // let kr;
+  // if (colum === null) kr = "flex-end";
+  // else kr = colum.value;
+  // boxBorder.style.justifyContent = kr;
 
 
 
   // 출력 문자열 //
-  boxBorder.innerText = chattingInput.value;
+  boxBorder.innerHTML = chattingInput.value;
 
 
 
