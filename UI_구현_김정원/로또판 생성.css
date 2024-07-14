@@ -30,8 +30,6 @@
   align-items: center;
   cursor: pointer;
   user-select: none;
+  color: red;
 }
 
-.active{
-  background-color: plum;
-}
